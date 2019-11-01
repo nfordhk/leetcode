@@ -10,3 +10,11 @@ function defangIPaddr () {
 }
 
 defangIPaddr()
+
+/*
+Accepted
+Runtime: 84 ms
+Your input "1.1.1.1"
+Output "1[.]1[.]1[.]1"
+Expected "1[.]1[.]1[.]1"
+*/
