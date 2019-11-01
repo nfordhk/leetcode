@@ -8,3 +8,6 @@ var toLowerCase = function(str) {
     return str.toLowerCase()
 };
 
+//Solution 2, using ASCII
+
+
