@@ -9,20 +9,31 @@ Think about how the implementation of the lowercase function call can be done ea
     return str.toLowerCase()
 };*/
 
-//Solution 2, using ASCII (incompleted solution)
+//Solution 2, using ASCII (incomplete solution)
 function toLowerCase () {
-    let str = "Hello"
     const regex = /[A-Z]/g;
+    let str = "Hello"
+    let splitString = str.split('')
 
-    if (str.match(regex)) {
-        let regexString = str.match(regex)
+    /*if (str.match(regex)) {
+        //let regexString = str.match(regex)
         let asciiCode = str.charCodeAt(0);
 
         //asciiCode = asciiCode + 32
         asciiCode += 32
         return asciiCode
+    }*/
+
+    for (i = 0; i < splitString.length; i++) {
+        let asciiCode = str.charCodeAt(0);
+        asciiCode += 32
+        return asciiCode
     }
-}
+    
+    //return splitString.length 
+
+}//end toLowerCase()
 
 console.log (toLowerCase())
+
 
